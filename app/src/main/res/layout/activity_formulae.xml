@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Formulae">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_weight="5"
+        android:background="@drawable/blue_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:text="Input"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/R_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:ems="10"
+            android:hint="Input the value of resistance"
+            android:inputType="numberDecimal"
+            android:textColorHint="#AAFFFFFF" />
+
+        <EditText
+            android:id="@+id/L_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:ems="10"
+            android:hint="Input the value of Inductance"
+            android:inputType="numberDecimal"
+            android:textColorHint="#AAFFFFFF" />
+
+        <EditText
+            android:id="@+id/C_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:ems="10"
+            android:hint="Input the value of Capacitance"
+            android:inputType="numberDecimal"
+            android:textColorHint="#AAFFFFFF" />
+
+        <Button
+            android:id="@+id/analyse_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Analyse"
+            app:cornerRadius="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/blue_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Analysisc of RLC circuit"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/resfreq_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="Resonant Frequency = 270hz"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/halfpow_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:text="Half power frequencies are : 120 hz,270hz" />
+
+        <TextView
+            android:id="@+id/bandwid_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:text="BandWidth = 470hz" />
+
+        <TextView
+            android:id="@+id/qualfac_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:text="Quality Factor is 27" />
+    </LinearLayout>
+
+</LinearLayout>
